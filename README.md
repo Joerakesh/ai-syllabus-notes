@@ -41,7 +41,7 @@ Perfect for students, teachers, and academic content creators. ✨
 
 ```bash
 git clone https://github.com/Joerakesh/ai-syllabus-notes
-cd snapnotes-ai
+cd ai-syllabus-notes
 ```
 
 ### 2. Install dependencies
