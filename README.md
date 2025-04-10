@@ -25,13 +25,13 @@ Perfect for students, teachers, and academic content creators. ✨
 
 ## 🛠 Tech Stack
 
-| Layer         | Tech                              |
-|---------------|-----------------------------------|
-| Frontend      | React / Next.js + Tailwind CSS    |
-| OCR           | Tesseract.js / Google Vision API  |
-| AI            | OpenAI GPT-4 API (or Claude AI)   |
-| Export        | jsPDF, html2pdf.js                |
-| Backend (optional) | Node.js + Express             |
+| Layer              | Tech                             |
+| ------------------ | -------------------------------- |
+| Frontend           | React / Next.js + Tailwind CSS   |
+| OCR                | Tesseract.js / Google Vision API |
+| AI                 | OpenAI GPT-4 API (or Claude AI)  |
+| Export             | jsPDF, html2pdf.js               |
+| Backend (optional) | Node.js + Express                |
 
 ---
 
@@ -51,16 +51,19 @@ npm install
 ```
 
 ### 3. Setup .env
+
 Create a .env file and add your API keys:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key
+GEMINI_API_KEY=your_gemini_api_key
 ```
 
 ### 4. Run the development server
+
 Create a .env file and add your API keys:
 
 ```bash
 npm run dev
 ```
+
 Visit http://localhost:3000 in your browser.
