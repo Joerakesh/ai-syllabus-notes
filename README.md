@@ -1,69 +1,105 @@
-# 📚 SnapNotes – AI-Powered Syllabus Key Notes Generator
+# ✨ SnapNotes AI 📸📝
 
-SnapNotes is a web application that uses **AI + OCR** to help students automatically generate **concise key notes** from their syllabus.  
-Upload an image of your syllabus (photo, scan, or PDF), and SnapNotes will:
-
-- Extract the text using OCR
-- Understand the subject and syllabus structure
-- Ask you which unit/topic you need
-- Generate clean, study-ready bullet-point notes using AI
-
-Perfect for students, teachers, and academic content creators. ✨
-
----
+SnapNotes is a smart note generator that extracts text from syllabus images and generates structured study notes using AI.
 
 ## 🚀 Features
 
-- 📸 Upload syllabus as image (JPG/PNG) or PDF
-- 🔍 Text extraction using Tesseract.js / Vision API
-- 🧠 AI identifies subject + syllabus layout
-- ✍️ Pick a unit → Get instant key points
-- 📤 Export generated notes as PDF or copy as text
-- 💬 Clean, interactive UI for easy use
+- 📸 Upload scanned syllabus or textbook images
+- 🧠 Extract text using OCR
+- 🔍 Enter any unit/topic
+- ✨ Generate smart, summarized notes with AI
+- 📄 Export AI notes as beautifully styled PDF
+- 🎨 Funky UI with colorful buttons, emojis, and cool fonts
 
 ---
 
-## 🛠 Tech Stack
+## 📦 Tech Stack
 
-| Layer              | Tech                             |
-| ------------------ | -------------------------------- |
-| Frontend           | React / Next.js + Tailwind CSS   |
-| OCR                | Tesseract.js / Google Vision API |
-| AI                 | OpenAI GPT-4 API (or Claude AI)  |
-| Export             | jsPDF, html2pdf.js               |
-| Backend (optional) | Node.js + Express                |
+- **Frontend**: Next.js, TailwindCSS, Lucide Icons
+- **Backend**: Node.js, Express.js, Gemini API (for AI note generation)
+- **PDF Export**: jsPDF + html2canvas
 
 ---
 
-## 📦 Getting Started
+## 🔧 Setup Instructions
 
-### 1. Clone the repository
+### 1. Clone the repo
 
 ```bash
-git clone https://github.com/Joerakesh/ai-syllabus-notes
+git clone https://github.com/Joerakesh/ai-syllabus-notes.git
 cd ai-syllabus-notes
 ```
 
 ### 2. Install dependencies
 
+#### Frontend
+
 ```bash
+cd frontend
 npm install
 ```
 
-### 3. Setup .env
-
-Create a .env file and add your API keys:
-
-```env
-GEMINI_API_KEY=your_gemini_api_key
-```
-
-### 4. Run the development server
-
-Create a .env file and add your API keys:
+#### Backend
 
 ```bash
+cd ../backend
+npm install
+```
+
+### 3. Set up Environment
+
+Create a `.env` file in the `backend` folder:
+
+```
+GEMINI_API_KEY=your_api_key_here
+PORT=5000
+```
+
+Make sure your Gemini API key is correct.
+
+---
+
+## 💡 Running the App
+
+### Start the Backend
+
+```bash
+cd backend
 npm run dev
 ```
 
-Visit http://localhost:3000 in your browser.
+### Start the Frontend
+
+```bash
+cd ../frontend
+npm run dev
+```
+
+Visit: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📥 Export to PDF
+
+Click the `📥 Export to PDF` button after generating notes — it'll capture the notes section and download a styled PDF!
+
+---
+
+## 🛠️ To-Do / Improvements
+
+- [ ] Add support for multiple image uploads
+- [ ] History of generated notes
+- [ ] User login for saving progress
+- [ ] Better OCR post-processing
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by Joe Rakesh
+
+---
+
+## 🧠 License
+
+MIT License — feel free to use, share, and improve!
